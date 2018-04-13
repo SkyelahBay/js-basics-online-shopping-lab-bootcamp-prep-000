@@ -56,7 +56,10 @@ function total() {
   for(var i = 0; i < cart.length; i++){ //for every item in our cart
     holder.push(cart[i].itemPrice);
   }
-  return holder;
+  total = holder.reduce(function(a,b){
+    return a+b;
+  });
+  return total[0];
 }
 
 function removeFromCart(item) {
