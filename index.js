@@ -20,7 +20,19 @@ function addToCart(item) {
 }
 
 function viewCart() {
- for(var i = 0; i < )
+  let temp = [];
+  let sentence = `in your cart, you have `;
+  for(var i = 0; i < cart.length; i++ ){
+    if(cart.length === 0){
+      return `Your shopping cart is empty.`;
+    }
+    else{
+      
+    }temp.push(`${cart[i].itemName} at ${cart[i].itemPrice}`);
+  }
+  if(cart.length)
+  
+  return sentence;
 }
 
 function total() {
