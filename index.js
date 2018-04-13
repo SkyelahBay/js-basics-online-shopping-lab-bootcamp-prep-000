@@ -41,8 +41,8 @@ function viewCart() {
       temp[j] += `, `; //
     }
   }
-  temp[temp.length] -= `, `;
-  return sentence += `${temp.join('')}.`;
+  
+  return sentence += `${temp.join('')}`;
 }
 
 function total() {
