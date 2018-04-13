@@ -31,7 +31,7 @@ function viewCart() {
     }
   }
   temp[temp.length] += `.`;
-  sentence
+  sentence += temp.join(', and ');
   
   
   return sentence;
