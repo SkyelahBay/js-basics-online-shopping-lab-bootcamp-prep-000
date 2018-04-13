@@ -65,11 +65,15 @@ function total() {
 function removeFromCart(item) {
   let holder = [];
   for(var i = 0; i < cart.length; i++){
-    holder.push(cart[i].itemName);
-    if (holder === item){
-      cart.splice(i,1) //remove that current item
-      return cart;
-    }
+    holder.push(cart[i].itemName); //push all itemnames to the holder
+  }
+  if(holder.indexOf(item) > -1){ //if > -1, that means it exists.
+    // take that index and delete from it in the cart since 1:1 push above.
+    cart.splice((holder.indexOf(item)), 1);
+    return cart;
+  }
+  else{
+    
   }
   
 }
