@@ -30,6 +30,9 @@ function viewCart() {
       temp.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
   }
+  
+  
+  
   for(var j = 0; j < temp.length; j++){
     if(j === temp.length-1 && temp.length > 1){
       temp[j]+= `, and `//in the 2nd to last index, make sure our grammar is correct
