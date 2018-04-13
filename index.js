@@ -53,12 +53,12 @@ function viewCart() {
 function total() {
   let holder = [];
   for(var i = 0; i < cart.length; i++){ //for every item in our cart
-    holder.push(cart[i].itemPrice);
+    holder.push(cart[i].itemPrice); //push the price to an array
   }
-  let total = holder.reduce(function(a,b){
+  let total = holder.reduce(function(a,b){ //create a variable called total and store the sum
     return a+b;
   });
-  return total[0];
+  return total;
 }
 
 function removeFromCart(item) {
