@@ -72,10 +72,10 @@ function removeFromCart(item) {
     cart.splice((holder.indexOf(item)), 1);
     return cart;
   }
-  else{
-    
+  else{ //otherwise that means the index returned <= -1, which means it doesn't exist.
+    return `That item is not in your cart.`;
   }
-  
+
 }
 
 function placeOrder(cardNumber) {
