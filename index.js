@@ -3,14 +3,19 @@ var cart = [];
 function getCart() {
  return cart;
 }
-
 function setCart(c) {
   cart = c;
   return cart;
 }
 
+
+
+
 function addToCart(item) {
- // write your code here
+  items = {
+    [item]
+  }
+ 
 }
 
 function viewCart() {
