@@ -27,10 +27,12 @@ function viewCart() {
       return `Your shopping cart is empty.`;
     }
     else{
-      temp.push(`${cart[i].itemName} at ${cart[i].itemPrice}`);
+      temp.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
   }
-  if()
+  temp[temp.length] += `.`;
+  sentence
+  
   
   return sentence;
 }
