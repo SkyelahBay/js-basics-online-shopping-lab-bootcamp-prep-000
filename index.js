@@ -51,11 +51,11 @@ function viewCart() {
 
 
 function total() {
-  let temp;
+  let total;
   for(var i = 0; i < cart.length; i++){
-    temp += cart[i].itemPrice;
-    return `$${temp}`;
+    total += cart[i].itemPrice;
   }
+  return `$${total}`;
 }
 
 function removeFromCart(item) {
