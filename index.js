@@ -58,7 +58,7 @@ function total() {
   let total = holder.reduce(function(a,b){ //create a variable called total and store the sum
     return a+b;
   });
-  return total;
+  return `Your total is $${total}.`;
 }
 
 function removeFromCart(item) {
