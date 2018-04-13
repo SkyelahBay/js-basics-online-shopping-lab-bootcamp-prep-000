@@ -26,13 +26,9 @@ function viewCart() {
   let temp = [];
   let sentence = `in your cart, you have `;
   for(var i = 0; i < cart.length; i++ ){
-    if(cart.length === 0){
-      sentence =  `Your shopping cart is empty.`;
-    }
-    else{
       temp.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
-    }
   }
+  
   for(var j = 0; j < temp.length; j++){
     if(j === temp.length-2 && temp.length > 1){
       temp[j]+= `, and `//in the 2nd to last index, make sure our grammar is correct
@@ -40,6 +36,12 @@ function viewCart() {
     else if(j !== temp.length -1){ //in all cases except for our final item, precede with a comma.
       temp[j] += `, `; //
     }
+  }
+  if(cart.length === 0){
+    return `Your shopping cart is empty.`;
+  }
+  else{
+    
   }
   return sentence += `${temp.join('')}.`; //join our original sentence to our items.
 }
