@@ -85,7 +85,7 @@ function placeOrder(cardNumber) {
   else{
     let store = total(); //run our total before clearing the cart
     cart.length = 0; //clear the cart by setting its length to 0.
-    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+    return `Your total cost is $${store}, which will be charged to the card ${cardNumber}.`;
     
   }
 }
