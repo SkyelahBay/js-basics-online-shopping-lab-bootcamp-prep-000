@@ -37,7 +37,7 @@ function viewCart() {
     if(j === temp.length-2 && temp.length > 1){
       temp[j]+= `, and `//in the 2nd to last index, make sure our grammar is correct
     }
-    else{
+    else if(j !== temp.length){
       temp[j] += `, `; //
     }
   }
