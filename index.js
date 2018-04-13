@@ -52,11 +52,10 @@ function viewCart() {
 
 function total() {
   let holder = [];
-  let total;
   for(var i = 0; i < cart.length; i++){ //for every item in our cart
     holder.push(cart[i].itemPrice);
   }
-  total = holder.reduce(function(a,b){
+  let total = holder.reduce(function(a,b){
     return a+b;
   });
   return total[0];
