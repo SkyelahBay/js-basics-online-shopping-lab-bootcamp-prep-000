@@ -42,7 +42,7 @@ function viewCart() {
     }
   }
   
-  return sentence += `${temp.join('')}`;
+  return sentence += `${temp.join('')}.`;
 }
 
 function total() {
