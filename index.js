@@ -41,9 +41,8 @@ function viewCart() {
     return `Your shopping cart is empty.`;
   }
   else{
-    
+    return sentence += `${temp.join('')}.`; //join our original sentence to our items.
   }
-  return sentence += `${temp.join('')}.`; //join our original sentence to our items.
 }
 
 
