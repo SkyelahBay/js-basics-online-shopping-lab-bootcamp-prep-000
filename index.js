@@ -13,8 +13,9 @@ function setCart(c) {
 
 function addToCart(item) {
   items = {
-    [item]
-  }
+    itemName : item,
+    itemPrice : ()
+  };
  
 }
 
