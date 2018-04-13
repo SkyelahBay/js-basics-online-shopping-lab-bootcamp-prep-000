@@ -14,13 +14,13 @@ function setCart(c) {
 function addToCart(item) {
   items = {
     itemName : item,
-    itemPrice : ()
+    itemPrice : (Math.random() * Math.floor(100))
   };
- 
+  return `${items.itemName} has been added to your cart.`;
 }
 
 function viewCart() {
-  // write your code here
+ for(var i = 0; i < )
 }
 
 function total() {
