@@ -37,15 +37,12 @@ function viewCart() {
     if(j === temp.length-2 && temp.length > 1){
       temp[j]+= `, and `//in the 2nd to last index, make sure our grammar is correct
     }
-    else if(j === temp.length){
-      temp[j] += `.`; //end with a period
-    }
     else{
       temp[j] += `, `; //
     }
   }
-  
-  return sentence += `${temp.join('')}`;
+  temp[temp.length] -= `, `;
+  return sentence += `${temp.join('')}.`;
 }
 
 function total() {
