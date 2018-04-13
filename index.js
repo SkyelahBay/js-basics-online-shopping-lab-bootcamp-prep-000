@@ -24,7 +24,7 @@ function addToCart(item) {
 
 function viewCart() {
   let temp = [];
-  let sentence = `in your cart, you have `;
+  let sentence = `In your cart, you have `;
   for(var i = 0; i < cart.length; i++ ){
       temp.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
