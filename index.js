@@ -53,7 +53,7 @@ function viewCart() {
 function total() {
   let total;
   for(var i = 0; i < cart.length; i++){
-    total += cart[i].itemPrice;
+    total += parseInt(cart[i].itemPrice);
   }
   return `$${total}`;
 }
